@@ -24,10 +24,13 @@
   "devDependencies": {
     "@types/chai": "^4.2.6",
     "@types/mocha": "^5.2.7",
-    "chai": "^4.2.0",
-    "ethereum-waffle": "^2.4.1",
-    "ethereumjs-util": "^6.2.0",
-    "mocha": "^6.2.2",
+    "chai": "4.3.4",
+    "ethereum-waffle": "2.5.1",
+    "ethereumjs-util": "7.1.5",
+    "ethers": "4.0.47",
+    "ganache-core": "2.13.2",
+    "merkle-patricia-tree": "3.0.0",
+    "mocha": "9.2.2",
     "prettier": "^1.19.1",
     "rimraf": "^3.0.0",
     "solc": "0.5.16",
@@ -43,6 +46,10 @@
     "pretest": "yarn compile",
     "test": "mocha",
     "prepublishOnly": "yarn test"
+  },
+  "resolutions": {
+    "ethers": "4.0.47",
+    "@ethereum-waffle/provider/ethers": "4.0.47"
   },
   "license": "GPL-3.0-or-later"
 }
